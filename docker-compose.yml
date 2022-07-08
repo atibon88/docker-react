@@ -7,11 +7,11 @@ services:
     ports:
       - "80:80"
 
-  tests:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    volumes:
-      - /app/node_modules
-      - .:/app
-    command: ["npm", "run", "test"]
+  # tests:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   volumes:
+  #     - /app/node_modules
+  #     - .:/app
+  #   command: ["npm", "run", "test"]
